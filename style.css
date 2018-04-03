@@ -65,6 +65,10 @@ h1 {
 
 
 /*hero*/
+form input {
+	width: 250px;
+	height: 25px;
+}
 .hero-wrapper {
 	width: 100%;
 	margin-top: 250px;
@@ -88,12 +92,18 @@ h1 {
 	width: 40%;
 	padding: 20px;
 }
+.aside-form h2 {
+	margin-bottom: 20px;
+}
+.aside-form form h4 {
+	margin-bottom: 5px;
+}
 #comment-form-box {
 	height: 60px;
-    width: 200px;
+    width: 340px;
 }
 button {
-	margin: 20px 0px 0px 145px;
+	margin: 20px 0px 0px 290px;
 }
 
 /*how it works section */
@@ -170,6 +180,22 @@ button {
 	}
 	.nav-items-right {
 		display: none;
+	}
+}
+
+/* mobile css for HERO/CONTACT */
+
+@media only screen and (max-width: 1330px) {
+	.aside-form {
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 1180px) {
+	.aside-form {
+		width: 55%;
+	}
+	.hero-text {
+		width: 40%;
 	}
 }
 
