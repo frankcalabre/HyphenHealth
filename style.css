@@ -1,0 +1,210 @@
+/*global*/
+* { margin:0; padding:0; box-sizing:border-box; }
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+a {
+	text-decoration: none;
+}
+body {
+	height: 1200px;
+	font-family: raleway;
+	background-color: #82c4f7;
+}
+h1 {
+	font-size: 32px;
+}
+
+/*COLORS 
+#6d86ae
+#82c4f7*/
+
+
+/*body*/
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+/*navigation */
+.top-nav {
+	width: 100%;
+    height: 140px;
+    position: fixed;
+    background-color: white;
+}
+.logo {
+	width: 150px;
+	height: 100px;
+	float: left;
+	border: 1px solid black;
+	margin: 10px;
+}
+.nav-items-left {
+	margin: 50px 0px 0px 50px;
+	float: left;
+	width: 40%;
+}
+.nav-items-left a {
+	float: left;
+	width: 30%;
+}
+.nav-items-right {
+	margin-top: 50px;
+	float: right;
+	width: 25%;
+}
+.nav-items-right a {
+	float: left;
+	width: 45%;
+}
+
+
+/*hero*/
+.hero-wrapper {
+	width: 100%;
+	margin-top: 250px;
+
+}
+.hero {
+	width: 80%;
+	height: 470px;
+	margin: 0 auto 200px;
+	border: 1px solid black;
+	background-color: white;
+}
+.hero-text{
+	padding: 20px;
+	float: left;
+	width: 45%;
+	text-align: center;
+}
+.aside-form {
+	float: right;
+	width: 40%;
+	padding: 20px;
+}
+#comment-form-box {
+	height: 60px;
+    width: 200px;
+}
+button {
+	margin: 20px 0px 0px 145px;
+}
+
+/*how it works section */
+
+.hiw-header {
+	text-align: center;
+	margin: 25px 0px 25px 0px;
+}
+.numbers {
+	float: left;
+	width: 33%;
+	/* animation-name: frank;
+	-webkit-animation-name: frank; Safari 4.0 - 8.0
+    -webkit-animation-duration: 4s; Safari 4.0 - 8.0
+    animation-name: frank;
+    animation-duration: 4s;
+	position: relative; */
+}
+/* #one {
+	position: absolute;
+	top: 400px;
+	left: 50px;
+} */
+.numbers h1 {
+	font-size: 50px;
+	text-align: center;
+}
+.numbers p {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+.numbers h4 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+/* @-webkit-keyframes frank {
+	0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+
+} */
+
+.info {
+	margin: 200px auto;
+	text-align: center;
+	padding: 100px;
+}
+.info h1 {
+	margin-bottom: 40px;
+}
+
+
+/*mobile CSS for body */
+@media only screen and (max-width: 1140px){
+	body {
+		font-size: 90%;
+	}
+}
+
+/*mobile CSS for NAV*/
+
+@media only screen and (max-width: 1002px){
+	.nav-items-left {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 802px){
+	.nav-items-left {
+		display: none;
+	}
+	.nav-items-right {
+		display: none;
+	}
+}
+
+
+/* .numbers {
+    background-repeat:no-repeat;
+    width:375px;
+    height:375px;
+    z-index:5;
+    position:absolute;
+
+    
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    
+    
+    -webkit-animation: steps 5s ease-in-out infinite alternate;
+    animation: steps 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes steps {
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        -webkit-transform: scale(2.0);
+    }
+}
+
+@keyframes steps {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.0);
+    }
+} */
