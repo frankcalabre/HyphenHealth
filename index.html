@@ -34,18 +34,35 @@
 						<h3>Our packages are a great fit for employers that do not currently offer health benefits.</h3><br>
 					</div>
 					<div class="aside-form">
-						<h2>Interested? Contact us today!</h2>
+						<div id="form-messages"></div>
+							<form id="ajax-contact" method="post" action="mailer.php">
+									<div class="field">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" required>
+									</div>
+								
+									<div class="field">
+										<label for="email">Email:</label>
+										<input type="email" id="email" name="email" required>
+									</div>
+								
+									<div class="field">
+										<label for="message">Message:</label>
+										<textarea id="message" name="message" required></textarea>
+									</div>
+								
+									<div class="field">
+										<button type="submit">Send</button>
+									</div>
+								</form>
+						<!-- <h2>Interested? Contact us today!</h2>
 						<form>
 							<h4>First Name</h4>
 							<input type="#" name="">
 						</form>
 						<form>
 							<h4>Last Name</h4>
-							<input type="#" name="">
-						</form>
-						<form>
-							<h4>Industry</h4>
-							<input type="#" name="">
+							<input type="text" name="">
 						</form>
 						<form>
 							<h4>Company</h4>
@@ -59,7 +76,7 @@
 							<h4>Comments</h4>
 							<input id="comment-form-box" type="#" name="">
 						</form>
-							<button>CONTACT</button>
+							<button>CONTACT</button> -->
 					</div>
 				</div>
 			</div>
@@ -111,5 +128,7 @@
 
 
 	</wrapper>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="/Users/frankcalabrese/Desktop/HyphenHealth/js/jquery-2.1.0.min.js"></script>
 </body>
 </html>
