@@ -69,6 +69,7 @@ h1 {
 form input {
 	width: 250px;
 	height: 25px;
+	border: 1px solid #82c4f7;
 }
 .hero-wrapper {
 	width: 100%;
