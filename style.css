@@ -19,9 +19,10 @@ h1 {
 	font-size: 32px;
 }
 
-/*COLORS 
-#6d86ae
-#82c4f7*/
+/* COLORS  */
+/* blue #6d86ae
+light-blue #82c4f7
+green #6bff664a */
 
 
 /*body*/
@@ -36,7 +37,11 @@ h1 {
 	width: 100%;
     height: 140px;
     position: fixed;
-    background-color: white;
+	background-color: white;
+	color: #82c4f7;
+}
+.top-nav a {
+	color: #82c4f7;
 }
 .logo {
 	width: 150px;
@@ -69,7 +74,7 @@ h1 {
 form input {
 	width: 250px;
 	height: 25px;
-	border: 1px solid #82c4f7;
+	border: 1px solid #f0fff4;
 }
 .hero-wrapper {
 	width: 100%;
@@ -80,8 +85,7 @@ form input {
 	width: 80%;
 	height: 375px;
 	margin: 0 auto 200px;
-	border: 1px solid black;
-	background-color: white;
+	background-color: #82c4f7;
 }
 .hero-text{
 	padding: 20px;
@@ -98,18 +102,27 @@ form input {
 .aside-form h2 {
 	margin-bottom: 20px;
 }
+.aside-form-mobile {
+	display: none;
+}
 .field {
 	margin-bottom: 20px;
+}
+.field label p {
+	margin-bottom: 15px;
+}
+#message {
+	border: 1px solid #f0fff4;
 }
 
 button {
 	padding: 10px;
 	border-radius: 25px;
-	border: 1px solid #82c4f7;
+	border: 1px solid #f0fff4;
 	width: 100px;
 }
 button:hover {
-	background-color: #82c4f7;
+	background-color: #f0fff4;
 	color: white;
 }
 
@@ -227,7 +240,32 @@ button:hover {
 		width: 200px;
 	}
 }
-
+@media only screen and (max-width:520px){
+	.hero-text{
+		float: none;
+		width: 100%;
+	}
+	.aside-form {
+		display: none;
+	}
+	.aside-form-mobile {
+		display: inline-block;
+		text-align: center;
+	}
+}
+@media only screen and (max-width:375px){
+	.hero-text{
+		float: none;
+		width: 100%;
+	}
+	.aside-form {
+		display: none;
+	}
+	.aside-form-mobile {
+		display: inline-block;
+		text-align: center;
+	}
+}
 
 /* .numbers {
     background-repeat:no-repeat;
